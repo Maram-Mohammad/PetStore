@@ -1,0 +1,17 @@
+Flask
+Flask-Migrate
+Flask-SQLAlchemy
+flask-swagger-ui
+Flask-Testing
+flask-restplus
+psycopg2-binary
+
+alembic
+SQLAlchemy
+pylint
+pytest
+Werkzeug==0.16.1
+
+
+
+

@@ -1,0 +1,19 @@
+version: "2.2"
+services:
+  db:
+    image: postgres:9.6-alpine
+    #restart: always
+    environment:
+      POSTGRES_USER: adminuser
+      POSTGRES_PASSWORD: adminpass
+      POSTGRES_DB: petsdb
+    ports:
+      - 5432:5432
+    
+  adminer:
+    image: adminer
+    #restart: always
+    ports:
+      - 8080:8080
+
+ 
