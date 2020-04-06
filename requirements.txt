@@ -11,7 +11,3 @@ SQLAlchemy
 pylint
 pytest
 Werkzeug==0.16.1
-
-
-
-
