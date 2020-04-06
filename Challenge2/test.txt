@@ -1,0 +1,10 @@
+items 5
+
+ahmed 500 
+gamal 400
+yassine 50
+hossam 100
+amr 300
+mahmoud 500 
+adel 300
+jan 50
