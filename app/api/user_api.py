@@ -16,6 +16,16 @@ class User(Resource):
         except Exception as e:
             users_namespace.abort(400, str(e))
 
+    @users_namespace.marshal_with(user_model, skip_none=True)
+    @users_namespace.expect(user_model)
+    def post(self):
+        try:
+            user_dict = request.json.get("date") or request.json 
+            user = userService.add_user(user_dict)
+            return user, 200 
+        except Exception as e:
+            users_namespace.abort(400, str(e))
+
 
 
 @users_namespace.route('/bids/<owner_id>/<pet_id>')
